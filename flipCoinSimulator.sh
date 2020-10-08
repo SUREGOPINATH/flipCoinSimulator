@@ -15,12 +15,17 @@ function tossChecker() {
 }
 
 function results() {
-        if [ $headCount -gt $tailCount ]
-        then
-                echo "heads won "
-        else
-                echo "tails won"
-        fi
+
+	if [ $headCount -eq $tailCount ] ##modifying by adding tie senerio
+	then
+        	echo "Tie"
+	elif [ $headCount -gt $tailCount ]
+	then
+        	echo "Heads Won"
+	else
+        	echo "Tails Won"
+	fi
+
 }
 
 while [ $count -ne 5 ]
