@@ -28,7 +28,7 @@ function results() {
 
 }
 
-while [ $count -ne 5 ]
+while [ $count -ne 21 ]
 do
         toss="$(tossChecker)"
         case "$toss" in
